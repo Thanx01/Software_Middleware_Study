@@ -42,11 +42,11 @@ public class StudentDAOIMP implements StudentDAO{
 		}
 	}
 
-	public void delete(String id){  作业    }
+	public void delete(String id){      }
 
-	public List<Student> findAll(){   作业 return null;
+	public List<Student> findAll(){    return null;
 	}
 
-	public Student findByID(int id){   作业  }
+	public Student findByID(int id){  Student student=new Student(); return student; }
 
 }

@@ -11,11 +11,11 @@ public class TestDelete{
             conn=JdbcUtils.getConnection();
             //区别
             //使用？占位符代替参数
-            String sql="delete from student where";
+            String sql="delete from student where name=?";
             st=conn.prepareStatement(sql);//预编译sql,先写sql,然后不执行
 
             //手动给参数赋值，前者为下标，后者为value
-
+            st.setObject(1,"xzz01");
 
             //执行
             int i=st.executeUpdate();
