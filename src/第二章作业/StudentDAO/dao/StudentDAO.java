@@ -1,11 +1,11 @@
 package 第二章作业.StudentDAO.dao;
-import bean.*;
+import 第二章作业.StudentDAO.bean.*;
 import java.util.*;
 public interface StudentDAO{
     public void insert(Student s);
     public void update(Student s);
-    public void delete(String iD);
-    public Student findByID(long iD);
+    public void delete(String id);
+    public Student findByID(int iD);
     public List<Student> findAll();
 } 
 

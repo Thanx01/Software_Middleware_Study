@@ -3,10 +3,10 @@ package 第二章作业.StudentDAO.connection;
 import java.sql.*;
 
 public class DataBaseConnection{
-    private final String DBDriver ="org.apache.derby.jdbc.ClientDriver";
-    private final String DBURL ="jdbc:derby://localhost:1527/myeclipse";
-    private final String DBUSER ="classiccars";
-    private final String DBPASSWORD ="classiccars";
+    private final String DBDriver ="com.mysql.jdbc.Driver";
+    private final String DBURL ="jdbc:mysql://localhost:3306/xzz?useUnicode=true&characterEncoding=utf8&useSSL=false";
+    private final String DBUSER ="root";
+    private final String DBPASSWORD ="123456";
     private Connection conn = null;
     //构造器
     public DataBaseConnection(){

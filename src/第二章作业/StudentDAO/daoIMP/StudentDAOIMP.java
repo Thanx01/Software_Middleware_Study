@@ -2,8 +2,9 @@ package 第二章作业.StudentDAO.daoIMP;
 import 第二章作业.StudentDAO.bean.Student;
 import 第二章作业.StudentDAO.dao.StudentDAO;
 import java.sql.*;
+import java.util.List;
 
-import connection.DataBaseConnection;
+import 第二章作业.StudentDAO.connection.DataBaseConnection;
 
 public class StudentDAOIMP implements StudentDAO{
 	// 添加操作
@@ -27,12 +28,25 @@ public class StudentDAOIMP implements StudentDAO{
 		catch(Exception e){  }
 	}
 
-	public void update(Student s）{   作业   }
+	public void update(Student s){
+		String sql="select * from student";
+		PreparedStatement pstmt = null;
+		DataBaseConnection conn = null;
 
-	public void delete(String iD){  作业    }
+		try{
+			conn=new DataBaseConnection();
+			pstmt = conn.getConnection().prepareStatement(sql);
 
-	public List findAll(){   作业  }
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 
-	public Student findByID(long iD){   作业  }
+	public void delete(String id){  作业    }
+
+	public List<Student> findAll(){   作业 return null;
+	}
+
+	public Student findByID(int id){   作业  }
 
 }

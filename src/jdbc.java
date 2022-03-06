@@ -15,8 +15,8 @@ public class jdbc {
         Statement statement=connection.createStatement();
 
         //执行sql的对象
-// llll
-        String sql="select *from student";
+
+        String sql="select * from student";
         ResultSet resultSet= statement.executeQuery(sql);
         while(resultSet.next()){
             System.out.println("name:"+resultSet.getObject("name"));
