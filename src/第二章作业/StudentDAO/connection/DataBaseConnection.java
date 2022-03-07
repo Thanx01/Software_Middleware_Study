@@ -13,8 +13,11 @@ public class DataBaseConnection{
         try{
             Class.forName(DBDriver);
             conn = DriverManager.getConnection(DBURL,DBUSER,DBPASSWORD);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
         }
-        catch(Exception e){  }
     }
 
     //获得连接

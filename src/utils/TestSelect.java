@@ -16,9 +16,11 @@ public class TestSelect {
         try{
             connection=JdbcUtils.getConnection();
 
-            String sql="select * from student where class='02' ";
+            String sql="select * from student where id=? ";
 
             preparedStatement=connection.prepareStatement(sql);
+
+            preparedStatement.setObject(1,4);
 
             resultSet=preparedStatement.executeQuery();
 

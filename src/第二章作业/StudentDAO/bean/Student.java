@@ -1,14 +1,14 @@
 package 第二章作业.StudentDAO.bean;
 
 public class Student{
-   private long iD;
+   private int id;
    private String name;
 
-   public void setID(long iD){
-      this.iD = iD; }
+   public void setID(int id){
+      this.id = id; }
 
    public long getID(){
-      return iD;}
+      return id;}
 
    public void setName(String name){
       this.name = name; }
