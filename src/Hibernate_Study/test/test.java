@@ -14,7 +14,7 @@ import java.lang.Throwable;
 
 public class test {
 
-    
+    @Test
     public void test1() throws HibernateException {
         Customer customer=new Customer();
         customer.setName("xzz");
